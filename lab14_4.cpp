@@ -19,3 +19,16 @@ int main(){
 }
 
 //Write definition of shuffle() here 
+void shuffle(int &a,int &b, int &c,int &d){
+	int *array[] ={&a,&b,&c,&d} ,i,j;
+	for(int k=0;k<10;k++){
+		i = rand()%4;
+		j = rand()%4;
+	}
+
+	int temp = *array[i];
+	*array[i] = *array[j];
+	*array [j] = temp;
+
+
+}
